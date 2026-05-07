@@ -10,7 +10,7 @@ const Feed = ({ searchTerm }) => {
     useEffect(() => {
         // API Call Logic
         setLoading(true);
-        fetch("https://newsdata.io/api/1/latest?apikey=pub_6e6595993e38434eb0ed4b22c0d80485")
+        fetch("https://newsdata.io/api/1/latest?apikey=pub_41ee7da20cf04244827e83380bc3c928&language=en")
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');

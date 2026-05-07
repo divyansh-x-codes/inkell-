@@ -22,7 +22,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
         flexShrink: 0,
         cursor: 'pointer'
       }}>
-        Medium
+        Inkell
       </div>
 
       {/* Search Bar */}
