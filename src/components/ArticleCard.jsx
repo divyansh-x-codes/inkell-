@@ -2,16 +2,11 @@ import React from "react";
 
 const ArticleCard = ({ article }) => {
 
-  const title = article.title 
-
-  const description =
-    article.description 
-  const author =
-    article.creator?.[0] ;
-  const date =
-    article.pubDate 
-  const image =
-    article.image_url 
+  const title = article.title || "No Title Available";
+  const description = article.description || "No description available for this story.";
+  const author = article.creator?.[0] || "Unknown Author";
+  const date = article.pubDate || "Recently";
+  const image = article.image_url || "https://via.placeholder.com/120?text=No+Image";
 
   return (
 
