@@ -28,8 +28,7 @@ const Sidebar = () => {
                         transition: 'background 0.2s',
                         marginBottom: '4px'
                     }}
-                    onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#f2f2f2'}
-                    onMouseOut={(e) => e.currentTarget.style.backgroundColor = item.active ? '#f2f2f2' : 'transparent'}
+                    
                 >
                     <i className={`ti ${item.icon}`} style={{ fontSize: '20px' }}></i>
                     <span>{item.label}</span>
@@ -126,8 +125,7 @@ const Sidebar = () => {
                 cursor: 'pointer',
                 fontWeight: '500'
             }}
-                onMouseOver={(e) => e.currentTarget.style.textDecoration = 'underline'}
-                onMouseOut={(e) => e.currentTarget.style.textDecoration = 'none'}
+                
             >
                 See suggestions
             </div>
